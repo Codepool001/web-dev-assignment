@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student appliction form</title>
+    <link rel="icon" type="image/x-icon" href="https://yt3.ggpht.com/tHFctzmdUTCRAsmaE34-BKQZx--MpqyYOaxw-FFAmwFLEYSTl7QQdXSF6sH0hppNJqahuJkENw=s108-c-k-c0x00ffffff-no-rj">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<style>
+  
+  label{
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  input{
+    padding: 7px;
+    margin: 2px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  input:hover{
+    border: 1px solid #2185c3;
+    transition: border 0.3s ease;
+    color: rgb(30, 123, 199);
+    box-shadow: 0 2px 5px rgba(30, 123, 199, 0.3);
+    border-color: #fff;
+
+  }
+  input:focus {
+    box-shadow: #1a5980;
+}
+  .box{
+    margin:auto;
+
+  }
+  .header:hover{
+    border: 1px solid #2185c3;
+    transition: border 0.3s ease;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 2px 5px rgba(30, 123, 199, 0.3);
+    border-color: #fff;
+
+
+  }
+  input[type="submit"]{
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  input[type="reset"]{
+    padding: 10px 20px;
+    border: none;
+    background-color: #f44336;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  input[type="submit"]:hover, input[type="reset"]:hover{
+    background-color: #2185c3;
+    color: white;
+    box-shadow: 0 2px 5px rgba(30, 123, 199, 0.8);
+  }
+
+
+  .header{
+    text-align: center;
+    padding: 4px;
+    background-color: #bcd0dc;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(30, 123, 199, 0.3);
+    margin-bottom: 30px;
+  }
+  a{
+    text-decoration: none;
+    color: #002244;
+  }
+  #first:hover{
+    color: #077be1;
+  }
+  #second:hover{
+    color: #d80e0e;
+  }
+  #third:hover{
+    color: #fdfffe;
+  }
+
+  a:hover{
+    color: #fffefe;
+  }
+  label:hover{
+    color: #000000;
+  }
+  #age,#name,#phone,#male,#female,#email,#major,#gpa,#courses{
+    margin-left:40px;
+    
+
+  }
+</style>
+<body>
+    <section class="box"></section>
+    <header>
+        <h1 col ALIGN="CENTER">STUDENT APPLICATION FORM </h1>
+        <div class="header" align="center">
+            <i id="first" class="fa-solid fa-house"></i>
+            <label for="home" style="margin-right: 15px;"><a href="index.html">HOME</a></label> 
+            <i id="second" class="fa-brands fa-youtube"></i>
+            <label for="youtube"><a style="margin-right: 15px;" href="https://www.youtube.com/@code_pool">YOUTUBE</a></label>
+            <i id="third" class="fa-brands fa-github"></i>
+            <label for="github"><a href="https://github.com/Codepool001">GITHUB</a>
+    </header>
+        </div>
+        <section>
+            <form method="post" action="submit.php">
+                <label for="name">Name:</label><br>
+                <input title="Enter Your Nametbu" autofocus type="text" id="name" name="name" required><br>
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="age" required>
+                <br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone"  name="phone" pattern="[0-9]{10}" required>
+                <br><br>
+                <label for="gender">Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other" required>
+                <label for="other">Other</label>
+                <br>
+                <label for="major">Major:</label><br>
+                <select id="major" name="major" required>
+                    <option value="majors">Select Major</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="Physics">Physics</option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="Biology">Biology</option>
+                    <option value="English">English</option>
+                    <option value="History">History</option>
+                    <option value="Geography">Geography</option>
+                    <option value="Sociology">Sociology</option>
+                    <option value="Psychology">Psychology</option>
+                    <option value="Economics">Economics</option>
+                    <option value="Business">Business</option>
+                    <option value="Art">Art</option>
+                    <option value="Design">Design</option>
+                    <option value="Music">Music
+                </select>
+                <br><br>
+                <label for="gpa">GPA:</label>
+                <input type="number" id="gpa" name="gpa" step="0.01" min="0" max="4" required>
+                <br><br>
+                <label for="courses">Courses Taken:</label>
+                <textarea id="courses" name="courses" rows="4" cols="50" required></textarea>
+                <br><br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+                <br><br>
+                <a href="index.html">Home</a>
+                
+        </section>
+    </section>
+    
+</body>
+</html>
