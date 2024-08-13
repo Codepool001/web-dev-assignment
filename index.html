@@ -3,84 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Notes - Practicals</title>
+    <title>home page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        .link{
-            text-align: center;
-        }
-        
-    </style>
+</head>
+<style>
+    body{
+        background-color: #3c3e44;
+
+        color: #ffcc00;
+    }
+    
+    table {
+    width: 90%;
+    max-width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #1a1a1a;
+    color: hwb(0 100% 0%);
+    box-shadow: 0 4px 13px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    
+}
+
+th, td {
+    padding: 12px 20px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+th {
+    background-color: #333;
+    color: #ffcc00;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: #2a2a2a;
+}
+
+tr:nth-child(even) {
+    background-color: #464343;
+}
+
+tr:nth-child(odd) {
+    background-color: #1a1a1a;
+}
+
+a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #7ebceb;
+    text-decoration: underline;
+}
+
+td.link {
+    text-align: center;
+}
+
+.row-1 {
+    text-align: center;
+    font-weight: bold;
+}
+.label{
+    color: #aa7c1e;
+    text-decoration: underline;
+    transition: color 0.5s;
+}
+.header{
+    margin-bottom: 10px;
+}
+</style>
 <body>
-    <h1 align="center">HTML Notes - Practical No. 1</h1>
+    <h1 align="center">HTML NOTES</h1>
     <div class="header" align="center">
-        <i class="fa-solid fa-house""></i>
+        <i class="fa-solid fa-house"></i>
         <label for="home" style="margin-right: 15px;"><a href="index.html">home page</a></label> 
         <i class="fa-brands fa-youtube"></i>
         <label for="youtube"><a style="margin-right: 15px;" href="https://www.youtube.com/@code_pool">youtube</a></label>
         <i class="fa-brands fa-github"></i>
-        <label for="github"><a href="https://github.com/Codepool001">join github</a>
+        <label  for="github"><a class="External" href="https://github.com/Codepool001">join github</a>
     </div>
-    <hr>
-    <table border="2" align="center" style="width: 90%; table-layout: fixed; max-width: 100%;" aria-colspan="20px">
+
+    <table border-collapse align="center" style="width: 90%; table-layout: fixed; max-width: 100%;" aria-colspan="20px">
         <tr >
-            <th>Sr. No.</th>
+            <th class="row-1">Sr. No.</th>
             <th>Topic</th>
             <th>Link</th>
         </tr>
         <tr>
-            <td>1</td>
+            <td class="row-1">1</td>
             <td>All Text Formatting Tags</td>
             <td class="link"><a href="text-formatting.html">click here</a></td>
         </tr>
         <tr>
-            <td>2</td>
+            <td class="row-1">2</td>
             <td>Heading Tags</td>
             <td class="link"><a href="heading-tags.html">click here</a></td>
         </tr>
         <tr>
-            <td>3</td>
+            <td class="row-1">3</td>
             <td>Special Symbols</td>
             <td class="link"><a href="special-symbols.html">click here</a></td>
         </tr>
         <tr>
-            <td>4</td>
+            <td class="row-1">4</td>
             <td>List with Nested Tags</td>
             <td class="link"><a href="nested-lists.html">click here</a></td>
         </tr>
         <tr>
-            <td>5</td>
+            <td class="row-1">5</td>
             <td>Table with Nesting</td>
             <td class="link"><a href="nested-table.html">click here</a></td>
         </tr>
         <tr>
-            <td>6</td>
-            <td>Anchor Tag for Bottom, Top and External Link</td>
+            <td class="row-1">6</td>
+            <td>Anchor Tag for Bottom</td>
             <td class="link"><a href="anchor-tags.html">click here</a></td>
         </tr>
         <tr>
-            <td>7</td>
+            <td class="row-1">7</td>
             <td>Image and Video Tag</td>
-            <td class="link"><a href="image-video-tags.html">click here</a></td>
+            <td class="link"><a href="media-tags.html">click here</a></td>
         </tr>
         <tr>
-            <td >8</td>
+            <td class="row-1" >8</td>
             <td>HTML quotations</td>
             <td class="link"><a href="HTML quotations.html">click here</a></td>
         </tr>
         <tr>
-            <td >9</td>
+            <td class="row-1" >9</td>
             <td>Student application page</td>
-            <td class="link"><a href="student_application_form.html">click here</a></td>
+            <td class="link"><a href="02.html">click here</a></td>
         </tr>
-         <tr>
-            <td >10</td>
-            <td>Student log in page</td>
-            <td class="link"><a href="login_page.html">click here</a></td>
+        <tr>
+            <td class="row-1" >10</td>
+            <td>log in page</td>
+            <td class="link"><a href="">click here</a></td>
         </tr>
     </table>
-    <hr>
+    
     <div align="center">
         <footer>
             <i class="fa-solid fa-user-secret" "></i>
