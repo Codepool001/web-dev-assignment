@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student application form </title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        background-color:#141d2e;
+        
+
+    }
+   h1{
+        color: rgb(224, 233, 240);
+        font-size: 40px;
+        margin-top: 100px;
+    }
+    p{
+        color: rgb(56, 162, 255);
+    }
+    p{
+        text-align: center;  
+        margin-bottom: 100px;
+      }
+
+    .content{
+        
+        background-color: #141d2e;
+        color: #ffffff;
+        border-radius: 10px;
+       
+        
+    
+    }
+    
+    input{
+            width: 300px;
+            padding: 10px;
+            transition: 0.3s;
+            border-radius: 10px;
+            border: 0.5px solid white;
+            outline: none;
+            background: transparent;
+            margin: 2px 0;
+        }
+        input:focus{
+            background-color: #141d2e;
+            color: #ffffff;
+            outline: 2px solid rgb(80, 255, 246);
+            outline-offset: 2.5px;
+            box-shadow: 2px 2px 50px rgb(103, 235, 255);
+            border: none;
+            color: aqua;
+            /* border: 2px solid #65e0de; */
+            
+
+        }
+        .label{
+            color: #748a93;
+
+            font-size: 12px;
+            margin: 0 6px;
+        }
+        input:hover{
+           
+            box-shadow: 2px 2px 50px rgb(103, 235, 255);
+        }
+        select{
+            border: none;
+            background-color:#141d2e;
+            color: #ffffff;
+            border-radius: 10px;
+
+        }
+        select:hover{
+            box-shadow: 2px 2px 50px rgb(103, 235, 255);
+            outline-offset: 2.5px;
+            outline: 2px solid  rgb(80, 255, 246);
+        }
+        
+        textarea{
+            width: 300px;
+            padding: 10px;
+            border-radius: 10px;
+            border: 0.5px solid white;
+            outline: none;
+            background: transparent;
+            margin: 2px 0;
+            resize: vertical;
+            color: aqua;
+        }
+        textarea:focus+{
+            background-color: #141d2e;
+            color: #ffffff;
+            outline: 2px solid rgb(80, 255, 246);
+            outline-offset: 2.5px;
+            box-shadow: 2px 2px 50px rgb(103, 235, 255);
+            border: none;
+            color: aqua;
+        }
+    
+        textarea:hover{
+            box-shadow: 2px 2px 50px rgb(103, 235, 255);
+        }
+        .submit{
+            background-color: rgb(152, 0, 23);
+            width: 70px;
+            margin-right: 20px;
+            color: #ffffff;
+
+        }
+        .reset{
+            background-color: #141d2e;
+            color: #ffffff;
+            width: 70px;
+            background-color: rgb(2, 152, 59);
+        }
+        .submit:hover,.reset:hover{
+            background-color: rgb(255, 158, 0);
+        }
+        .box{
+            margin-top: 20px;
+            width: 400px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #141d2e;
+            color: #ffffff;
+            border: 2px solid white;
+            display: flex;
+            margin-top: 200px;
+        }
+</style>
+<body>
+    <div class="content">
+    <div class="main">
+
+        <img src="" alt="">
+        <h1> STUDENT APPLICATION FORM</h1>
+        <P>Delhi skill And Entrepreneurship University</P>
+    
+    <form >
+        <div class="label">Enter Your Name</div>
+            <input type="text" for="input" placeholder="write here"><br><br>
+            <div class="label">Enter Your Email</div>
+            <input type="email" for="input" placeholder="Email address"><BR></BR>
+            <div class="label">Enter Your phone no.</div>
+            <input type="number" for="input" placeholder="+91 "><BR></BR>
+            <div class="label">Enter Your phone no.</div>
+            <input type="text" for="input" placeholder="Appli. ID"><BR></BR>
+            <select id="major" name="major" required>
+                <option value="majors">Gender</option>
+                <option value="Computer Science">Male</option>
+                <option value="Mathematics">Female</option>
+                <option value="Physics">other</option>
+            </select><BR></BR>
+            <div class="label">Enter Your </div>
+            <input type="text" for="input" placeholder="write here"><BR></BR>
+            <select id="major" name="major" required>
+                <option value="majors">Select Major</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Mathematics">Mathematics</option>
+                <option value="Physics">Physics</option>
+                <option value="Chemistry">Chemistry</option>
+                <option value="Biology">Biology</option>
+                <option value="English">English</option>
+                <option value="History">History</option>
+                <option value="Geography">Geography</option>
+                <option value="Sociology">Sociology</option>
+                <option value="Psychology">Psychology</option>
+                <option value="Economics">Economics</option>
+                <option value="Business">Business</option>
+                <option value="Art">Art</option>
+                <option value="Design">Design</option>
+                <option value="Music">Music
+            </select><BR></BR>
+              <div class="label">GPA</div>
+                <input type="number" id="gpa" name="gpa" step="0.01" min="0" max="4" required>
+                <br><br>
+                 <div class="label">Courses Taken:</div>
+                <textarea id="courses" name="courses" rows="4" cols="50" required></textarea>
+                <br><br>
+                <input type="submit" class="submit" value="Submit">
+                <input type="reset" class="reset" value="Reset">
+                <br><br>
+                <a href="index.html">Home</a>
+    </form>
+</div>
+</div>
+<div class="box"></div>
+    
+</body>
+</html>
