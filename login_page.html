@@ -1,205 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Application Form</title>
+    <title>log in page</title>
     <style>
-        * {
+        *{
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
 
-        body {
+        }
+        body{
             display: flex;
             justify-content: center;
-            background-color: #141d2e;
-            color: #ffffff;
-            font-family: Arial, sans-serif;
-            
             align-items: center;
-            padding: 20px;
-        }
+            height: 100vh;
+            background-color: #4b5e7a;
 
-        .container {
+        }
+        h1{
+            margin: 20px 0;
+            color: rgb(251, 251, 252);
+        }
+        .container{
+            background-color: #233c57;
+            border-radius: 10px;
+            width: 300px;
+            padding: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            max-width: 1200px;
-            width: 100%;
+            justify-content: center;
+            background: transparent;
+            box-shadow: 2px 2px 50px rgb(103, 235, 255) inset;
+            
         }
-
-        h1 {
-            color: rgb(224, 233, 240);
-            font-size: 40px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        p {
-            color: hsl(208, 69%, 61%);
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .content {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            background-color: #141d2e;
-            border-radius: 10px;
-            padding: 20px;
-            gap: 20px;
-        }
-
-        .form-container {
-            flex: 1;
-        }
-
-        input,
-        select,
-        textarea {
-            width: 100%;
+        
+        input{
+            width: 95%;
             padding: 10px;
             margin: 10px 0;
             border-radius: 10px;
-            border: 0.5px solid white;
+            border:0.25px solid white;
             outline: none;
             background: transparent;
-            color: #ffffff;
+            color: #fefefe;
             transition: 0.3s;
         }
-        select{
-            background-color: #141d2e;
-        }
-        
-        input:focus,
-        select:focus,
-        textarea:focus {
-            outline: 2px solid rgb(80, 255, 246);
-            outline-offset: 2.5px;
-            box-shadow: 2px 2px 50px rgb(103, 235, 255);
-            
-        }
-        input:focus, select:focus,
-        textarea:focus{
+        input:focus{
+            background-color: #59759f;
+            color: #6af06c;
+            outline: 2px solid rgb(98, 252, 244);
             border: none;
         }
+        .label{
+            color: #9cb2d3;
+        }
+        a{
+            color: #18ace7;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        #forgetp{
+            color: #18ace7;
+            text-decoration: none;
+            margin: 10px 0;
+            display: flexbox;
         
-        input:hover,
-        select:hover,
-        textarea:hover {
-            box-shadow: 2px 2px 50px rgb(103, 235, 255);
         }
-
-        .label {
-            color: #748a93;
-            font-size: 12px;
-            margin: 6px 0;
-        }
-
-        .submit,
-        .reset {
+        #log-bn{
+            color: hsl(103, 73%, 84%);
             width: 100px;
-            padding: 10px;
-            border-radius: 10px;
-            border: none;
-            margin-top: 20px;
-            cursor: pointer;
         }
-
-        .submit {
-            background-color: rgb(152, 0, 23);
+        #log-bn:hover{
+            color: rgb(96, 244, 98);
         }
-
-        .reset {
-            background-color: rgb(2, 152, 59);
+        #log-bn:hover{
+            box-shadow: 2px 2px 20px rgb(103, 235, 255) inset;
+        
         }
-
-        .submit:hover,
-        .reset:hover {
-            background-color: rgb(255, 158, 0);
+        input:hover{
+            box-shadow: 2px 2px 20px rgb(103, 235, 255);
+        }
+        input:focus{
+            box-shadow: 2px 2px 20px rgb(103, 235, 255) inset;
         }
         
-
-        .box {
-            width: 300px;
-            padding: 20px;
-            border-radius: 10px;
-            background-color: #141d2e;
-            border: 2px solid white;
-            box-shadow: 2px 2px 20px rgba(255, 255, 255, 0.1);
+        input:focus{
+            outline: 1px solid rgb(80, 255, 246);
+            outline-offset: 3.5px;
         }
-
-        option{
-            color: #748a93;
-        }
-        #h1{
-            font-size: 20px;
-            
-        }
-
         
+        p{
+            margin: 4px;
+            color: rgb(158, 227, 245);
+        }
+        #forgetp,#register{
+            font-size: 14px;
+        }
+        #register{
+            margin-top: 10px;
+        }
+        #register a{
+            color: #18ace7;
+            text-decoration: none;
+        }
     </style>
 </head>
-
 <body>
     <div class="container">
-        <h1>STUDENT APPLICATION FORM</h1>
-        <p>Delhi Skill And Entrepreneurship University</p>
+        <h1>Log In </h1>
         <div class="content">
-            <div class="form-container">
-                <form>
-                    <div class="label">Enter Your Name</div>
-                    <input type="text" placeholder="Write here"><br>
-                    <div class="label">Enter Your Email</div>
-                    <input type="email" placeholder="Email address"><br>
-                    <div class="label">Enter Your Phone No.</div>
-                    <input type="number" placeholder="+91 "><br>
-                    <div class="label">Enter Your Application ID</div>
-                    <input type="text" placeholder="Application ID"><br>
-                    <div class="label">Select Gender</div>
-                    <select required>
-                        <option  value="majors">Gender</option>
-                        <option value="Male">Male</option>
-                        <option value="Female">Female</option>
-                        <option value="Other">Other</option>
-                    </select><br>
-                    <div class="label" >Select Major</div>
-                    <select required>
-                        <option value="majors">Select Major</option>
-                        <option value="Computer Science">Computer Science</option>
-                        <option value="Mathematics">Mathematics</option>
-                        <option value="Physics">Physics</option>
-                        <option value="Chemistry">Chemistry</option>
-                        <option value="Biology">Biology</option>
-                        <option value="English">English</option>
-                        <option value="History">History</option>
-                        <option value="Geography">Geography</option>
-                        <option value="Sociology">Sociology</option>
-                        <option value="Psychology">Psychology</option>
-                        <option value="Economics">Economics</option>
-                        <option value="Business">Business</option>
-                        <option value="Art">Art</option>
-                        <option value="Design">Design</option>
-                        <option value="Music">Music</option>
-                    </select><br>
-                    <div class="label">GPA</div>
-                    <input type="number" step="0.01" min="0" max="4" required><br>
-                    <div class="label">Courses Taken:</div>
-                    <textarea rows="4" required></textarea><br>
-                    <input type="submit" class="submit" value="Submit">
-                    <input type="reset" class="reset" value="Reset">
-                </form>
-            </div>
-            <div class="box">
-                <h1 id="h1">INDEX</h1>
-                <p></p>
-            </div>
+            <form action="/submit_login" method="post">
+                <div class="label">Enter Your Name</div>
+                <input title=" fill your Name" type="email" id="email" name="email" required><br><br>
+                <div class="label">Enter Your Password</div>
+                <input type="password" id="password" name="password" required><br><br>
+                <input id="log-bn" type="submit" value="Log-in">
+                <a id="forgetp" href="/forgot_password">Forgot Password?</a>
+                <a id="register" href="/register">Register Now</a>
+                <p>Don't have an account? <a href="/register">Sign Up</a></p>
+            </form>
+            
         </div>
     </div>
+    
 </body>
-
 </html>
